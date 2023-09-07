@@ -9,7 +9,7 @@ int main() {
     printf("NOTAS:\n");
     for(i = 0; i < 6; i++) {  // do the first part
         int a = 0;
-        if (n / notas[i]) {
+        if ((int) (n) / notas[i]) {
             a = n / notas[i];
             n = n - notas[i] * a;
         }
