@@ -8,9 +8,8 @@
 int solve(){
     int i;
     int existe = 0;
-    int test = 0;
     
-    float tam; scanf("%f\n", &tam);
+    float tam; scanf("%f\n", &tam);            
     int circ = 2* tam * PI;
     
     char valores[7]; sprintf(valores, "%i", circ);
@@ -23,8 +22,7 @@ int solve(){
         if (codigo[i] == valores[existe]){
             existe++;
             if (valores[existe] == '\0'){
-                test = 1;
-                break;
+                return printf("Foguete nao tem marcha re, vamo bora fml\n");
             }
         }
         else {
@@ -33,9 +31,7 @@ int solve(){
         }
     }
     
-    
-    if (test) return printf("Foguete nao tem marcha re, vamo bora fml\n");
-    else return printf("Ferrou, estamos no planeta errado\n");
+    return printf("Ferrou, estamos no planeta errado\n");
     
     
 }
