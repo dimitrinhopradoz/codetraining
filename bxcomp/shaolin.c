@@ -4,11 +4,9 @@
 #define PI 3.14159265
 #define TERRA 40075
 
-int count = 0;
 
 int solve(){
     int i;
-    count++;
     int existe = 0;
     int test = 0;
     
@@ -26,7 +24,6 @@ int solve(){
             existe++;
             if (valores[existe] == '\0'){
                 test = 1;
-                codigo[i+1] = '\0';
                 break;
             }
         }
