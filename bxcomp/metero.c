@@ -13,7 +13,6 @@ int solve(){
     for(i = pos; i >= 0; i--){
         if (espaco[i] == 1 && pos-i <= final){
             return printf("Nu, vou tascar um beijo numa pedra do espa¸co se eu entrar ai, paia.");
-            break;
         }
     }
     
