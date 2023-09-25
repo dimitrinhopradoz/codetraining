@@ -18,7 +18,6 @@ int main() {
             }
         }
         
-        
         for (i = 0; i < x-1; i++){ // GENERATING THE WALKING VECTOR
             scanf("%i ", &g);
             andar[i] = g;
@@ -32,21 +31,6 @@ int main() {
             int p, q; scanf("%i,%i", &p, &q);
             m[p][q]++;
         }
-        
-        printf("\n");
-        for (i = 0; i < x - 1; i++){ // HOW MUCH TO WALK PRINT
-            printf("%i ", andar[i]);
-        }
-        
-        printf("\n");
-        for (i = 0; i<x; i++){ // MATRIX PRINT
-            for (j = 0; j<x; j++){
-                printf("%i ", m[i][j]);
-            }
-            printf("\n");
-        }
-        
-        printf("MATRIZES:\n");
         
         for (i = 0; i < x - 1; i++){
             if (m[i][0]) {vida--; pontos = pontos - pontos / 2;} // GHOST TEST!
@@ -64,16 +48,11 @@ int main() {
             else pontos ++;
         }
         
-        
-            printf("\n");
         if (vida > 0){
             printf("YOU WIN!!!!!!!!!!!!! campeao mandou muito com %i pontos e %i vidas :D\n", pontos, vida);
         }
         else {
             printf("GAME OVER!! vc eh muito ruim e morreu!\n");
         }
-        }
-    
+    }
 }
-
-
